@@ -1,0 +1,1 @@
+<link href="{{ asset('themes/default/assets/css/suggestion.css') }}" rel="stylesheet">
