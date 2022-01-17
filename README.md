@@ -15,7 +15,7 @@ It packs in lots of demanding features that allows your business to scale in no 
 
 - **Bagisto**: v1.3.1.
 
-## Installation with composer:
+## Installation :
 - Run the following command
 ```
 composer require bagisto/bagisto-search-suggestion
@@ -46,42 +46,5 @@ npm run prod
 php artisan vendor:publish --force
 ```
 -> Press the number before "suggestionServiceProvider" class and then press enter to publish all assets and configurations.
-
-## Installation without composer:
-
-- Unzip the respective extension zip and then merge "suggestion" inside the webkul package.
-- Goto config/app.php file and add following line under 'providers'
-
-```
-Webkul\suggestion\Providers\suggestionServiceProvider::class,
-```
-
-- Goto composer.json file and add following line under 'psr-4'
-
-```
- "Webkul\\suggestion\\": "packages/Webkul/suggestion/src"
-```
-
-- Run these commands below to complete the setup
-
-```
-composer dump-autoload
-```
-
-```
-php artisan config:cache
-php artisan route:cache
-```
-
-- Run Some npm commands in "suggestion" folder
-```
-npm install
-npm run prod
-```
-
-```
-php artisan vendor:publish --force
-```
--> Press the number before "Webkul\suggestion\Providers\suggestionServiceProvider" and then press enter to publish all assets and configurations.
 
 > That's it.
