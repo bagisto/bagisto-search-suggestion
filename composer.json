@@ -1,0 +1,34 @@
+{
+    "name": "bagisto/bagisto-search-suggestion",
+    "description": "Bagisto Search-suggestion is a feature to make it faster to complete searches that you're beginning to type.",
+    "keywords": [
+        "bagisto",
+        "search",
+        "search suggestion"
+    ],
+    "homepage": "https://github.com/bagisto/bagisto-search-suggestion",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "bagisto"
+            
+        }
+    ],
+    "require": {
+        "konekt/concord": "^1.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Webkul\\suggestion\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Webkul\\suggestion\\Providers\\suggestionServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev"
+}
+
